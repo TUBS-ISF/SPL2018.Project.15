@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="Editor">
+            <description>
+This program is basically a text editor, but might be able to solve mathematical operations.
+</description>
+            <alt abstract="true" name="Feature">
+                <feature name="Wonderful"/>
+                <feature name="Beautiful"/>
+            </alt>
+            <feature name="World"/>
+            <alt abstract="true" mandatory="true" name="OS">
+                <description>
+Operating System
+</description>
+                <feature abstract="true" name="Windows"/>
+                <feature abstract="true" name="MacOS"/>
+                <feature abstract="true" name="Android"/>
+                <feature abstract="true" name="Linux"/>
+            </alt>
+            <and abstract="true" mandatory="true" name="Input">
+                <description>
+This feature sets the input for the editor. Text is always selected, but he can also add the feature for mathematical operations.
+</description>
+                <and abstract="true" mandatory="true" name="Text">
+                    <or abstract="true" name="Checking">
+                        <description>
+This feature adds a grammatical or spelling check to the editor.
+</description>
+                        <feature abstract="true" name="Grammar"/>
+                            <description>
+Checks if the basic grammar rules are used by the user.
+</description>
+                        <feature abstract="true" name="Spelling"/>
+                            <description>
+Checks if the basic spelling rules are used by the user.
+</description>
+                    </or>
+                    <alt abstract="true" name="Language">
+                        <description>
+This feature is important for the Checking feature. The user can select a language in which he likes to use this editor
+</description>
+                        <feature abstract="true" name="German"/>
+                        <feature abstract="true" name="English"/>
+                        <feature abstract="true" name="Spanish"/>
+                    </alt>
+                </and>
+                <and abstract="true" name="Mathematical_Operations">
+                    <and abstract="true" name="Default_Operations">
+                        <description>
+This feature describes the default mathematical operations which shall be solved.
+</description>
+                        <feature abstract="true" name="Addition"/>
+                        <feature abstract="true" name="Subtraction"/>
+                        <feature abstract="true" name="Multiplication"/>
+                        <feature abstract="true" name="Division"/>
+                    </and>
+                    <and abstract="true" name="Specific_Functions">
+                        <description>
+This feature adds some specific functions the the mathematical operations.
+</description>
+                        <feature abstract="true" name="Sinus"/>
+                        <feature abstract="true" name="Cosinus"/>
+                        <feature abstract="true" name="Tangent"/>
+                    </and>
+                    <and abstract="true" name="Specific_Constants">
+                        <description>
+This feature adds constants to the mathematic operations which can be used by the user.
+</description>
+                        <feature abstract="true" name="PI"/>
+                    </and>
+                </and>
+                <and abstract="true" mandatory="true" name="Highlighting">
+                    <description>
+This feature allows the user to highlight some part of the written text.
+</description>
+                    <and abstract="true" mandatory="true" name="Text_Format">
+                        <feature name="Bold"/>
+                        <feature name="Cursiv"/>
+                        <alt abstract="true" mandatory="true" name="Text_Color">
+                            <description>
+This feature allows the user to change the text color of the whole text. When the user wants the text in white, the background has to be black and the other way around.
+</description>
+                            <feature name="Text_Black"/>
+                            <feature name="Text_White"/>
+                        </alt>
+                    </and>
+                </and>
+            </and>
+            <and abstract="true" mandatory="true" name="Design">
+                <description>
+With this feature the user can change the design of the editor.
+</description>
+                <alt abstract="true" mandatory="true" name="Background_Color">
+                    <description>
+This feature changes the background color of the editor.
+</description>
+                    <feature name="Background_Black"/>
+                    <feature name="Background_White"/>
+                </alt>
+            </and>
+        </and>
+    </struct>
+    <constraints>
+        <rule>
+            <imp>
+                <var>Background_White</var>
+                <var>Text_Black</var>
+            </imp>
+        </rule>
+        <rule>
+            <imp>
+                <var>Background_Black</var>
+                <var>Text_White</var>
+            </imp>
+        </rule>
+    </constraints>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
