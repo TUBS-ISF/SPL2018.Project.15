@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="Editor"/>
+    <feature automatic="selected" name="OS"/>
+    <feature manual="selected" name="Windows"/>
+    <feature automatic="unselected" name="MacOS"/>
+    <feature automatic="unselected" name="Android"/>
+    <feature automatic="unselected" name="Linux"/>
+    <feature automatic="selected" name="Input"/>
+    <feature automatic="selected" name="Text"/>
+    <feature automatic="selected" manual="selected" name="Checking"/>
+    <feature manual="selected" name="Spelling"/>
+    <feature automatic="selected" manual="selected" name="Language"/>
+    <feature manual="selected" name="German"/>
+    <feature automatic="unselected" name="English"/>
+    <feature automatic="unselected" name="Spanish"/>
+    <feature automatic="selected" name="MathematicalOperations"/>
+    <feature automatic="selected" name="DefaultOperations"/>
+    <feature manual="selected" name="Addition"/>
+    <feature automatic="selected" name="SpecificFunctions"/>
+    <feature manual="selected" name="Cosinus"/>
+    <feature automatic="selected" name="Specific_Constants"/>
+    <feature manual="selected" name="PI"/>
+    <feature automatic="selected" name="Highlighting"/>
+    <feature automatic="selected" name="Text_Format"/>
+    <feature manual="selected" name="Bold"/>
+    <feature automatic="selected" name="TextColor"/>
+    <feature manual="selected" name="TextBlack"/>
+    <feature automatic="unselected" name="TextWhite"/>
+    <feature automatic="selected" name="Design"/>
+    <feature automatic="selected" name="BackgroundColor"/>
+    <feature automatic="unselected" name="BackgroundBlack"/>
+    <feature automatic="selected" name="BackgroundWhite"/>
+</configuration>

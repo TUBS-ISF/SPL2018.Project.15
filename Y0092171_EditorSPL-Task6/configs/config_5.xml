@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="Editor"/>
+    <feature automatic="selected" name="OS"/>
+    <feature manual="selected" name="Windows"/>
+    <feature automatic="unselected" name="MacOS"/>
+    <feature automatic="unselected" name="Android"/>
+    <feature automatic="unselected" name="Linux"/>
+    <feature automatic="selected" name="Input"/>
+    <feature automatic="selected" name="Text"/>
+    <feature automatic="selected" manual="selected" name="Language"/>
+    <feature manual="selected" name="German"/>
+    <feature automatic="unselected" name="English"/>
+    <feature automatic="unselected" name="Spanish"/>
+    <feature manual="selected" name="Addition"/>
+    <feature manual="selected" name="Subtraction"/>
+    <feature manual="selected" name="Multiplication"/>
+    <feature manual="selected" name="Division"/>
+    <feature automatic="selected" name="Highlighting"/>
+    <feature manual="selected" name="Bold"/>
+    <feature manual="selected" name="Cursiv"/>
+    <feature automatic="unselected" name="TextBlack"/>
+    <feature manual="selected" name="TextWhite"/>
+    <feature automatic="selected" name="Design"/>
+    <feature automatic="selected" name="BackgroundColor"/>
+    <feature automatic="selected" name="BackgroundBlack"/>
+    <feature automatic="unselected" name="BackgroundWhite"/>
+</configuration>
